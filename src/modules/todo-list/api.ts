@@ -1,5 +1,3 @@
-// import { w } from "@tanstack/query-core/build/legacy/hydration-mKPlgzt9";
-
 const BASE_URL = "http://localhost:3000";
 
 export type TodoDto = {

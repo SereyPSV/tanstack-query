@@ -1,14 +1,621 @@
 {
-    "tasks": [
-        {
-            "id": "1",
-            "text": "todo",
-            "done": false
-          },
-          {
-            "id": "2",
-            "text": "todo",
-            "done": false
-          }
-    ]
+  "users": [
+    {
+      "id": "1",
+      "login": "alice",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "login": "bob",
+      "password": "secure456"
+    },
+    {
+      "id": "3",
+      "login": "carol",
+      "password": "mypassword789"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "text": "Complete project report",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "Prepare for presentation",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "text": "Schedule meeting with team",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "4",
+      "text": "Review budget proposal",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "5",
+      "text": "Organize files",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "6",
+      "text": "Respond to client emails",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "7",
+      "text": "Update website content",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "8",
+      "text": "Plan team outing",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "9",
+      "text": "Fix login bug",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "10",
+      "text": "Draft contract",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "11",
+      "text": "Team feedback session",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "12",
+      "text": "Design newsletter template",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "13",
+      "text": "Arrange travel itinerary",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "14",
+      "text": "Conduct market research",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "15",
+      "text": "Finalize campaign strategy",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "16",
+      "text": "Compile sales data",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "17",
+      "text": "Update CRM system",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "18",
+      "text": "Organize data files",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "19",
+      "text": "Write blog post",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "20",
+      "text": "Prepare quarterly review",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "21",
+      "text": "New feature brainstorming",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "22",
+      "text": "Secure database",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "23",
+      "text": "Prototype mockup",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "24",
+      "text": "Analyze user feedback",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "25",
+      "text": "Optimize performance",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "26",
+      "text": "Update application UI",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "27",
+      "text": "Code review session",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "28",
+      "text": "Prepare press release",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "29",
+      "text": "Conduct A/B testing",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "30",
+      "text": "Plan marketing campaign",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "31",
+      "text": "Update user manual",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "32",
+      "text": "Test new software modules",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "33",
+      "text": "Participate in conference",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "34",
+      "text": "Review code contributions",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "35",
+      "text": "Manage inventory",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "36",
+      "text": "Launch social media ads",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "37",
+      "text": "Customer feedback analysis",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "38",
+      "text": "Weekly team meeting",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "39",
+      "text": "Emergency system patch",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "40",
+      "text": "Contingency planning",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "41",
+      "text": "Update API documentation",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "42",
+      "text": "Deploy app update",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "43",
+      "text": "Participate in webinar",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "44",
+      "text": "Refactor backend code",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "45",
+      "text": "Implement user feedback",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "46",
+      "text": "Conduct performance reviews",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "47",
+      "text": "Plan office renovations",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "48",
+      "text": "Organize charity event",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "49",
+      "text": "Review legal documents",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "50",
+      "text": "Enhance product features",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "51",
+      "text": "Negotiate vendor contracts",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "52",
+      "text": "Develop training schedule",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "53",
+      "text": "Set up project timelines",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "54",
+      "text": "Analyze competitor strategies",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "55",
+      "text": "Redesign packaging",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "56",
+      "text": "Audit server logs",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "57",
+      "text": "Create database backups",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "58",
+      "text": "Write release notes",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "59",
+      "text": "Optimize search algorithms",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "60",
+      "text": "Onboard new team members",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "61",
+      "text": "Conduct product demo",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "62",
+      "text": "Design new logo",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "63",
+      "text": "Prepare internal newsletter",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "64",
+      "text": "Evaluate supplier proposals",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "65",
+      "text": "Organize training workshops",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "66",
+      "text": "Distribute marketing materials",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "67",
+      "text": "Coordinate with partners",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "68",
+      "text": "Update risk management plan",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "69",
+      "text": "Prepare financial statements",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "70",
+      "text": "Host virtual meetup",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "71",
+      "text": "Run security scan",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "72",
+      "text": "Configure server settings",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "73",
+      "text": "Backup cloud storage",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "74",
+      "text": "Test disaster recovery plan",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "75",
+      "text": "Host client webinar",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "76",
+      "text": "Conduct usability testing",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "77",
+      "text": "Redesign landing page",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "78",
+      "text": "Launch product survey",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "79",
+      "text": "Host focus group",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "80",
+      "text": "Plan holiday party",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "81",
+      "text": "Apply for new patent",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "82",
+      "text": "Benchmark competitors",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "83",
+      "text": "Develop new pricing model",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "84",
+      "text": "Train customer support",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "85",
+      "text": "Develop website analytics",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "86",
+      "text": "Encrypt sensitive data",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "87",
+      "text": "Manage DNS settings",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "88",
+      "text": "Upgrade system hardware",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "89",
+      "text": "Create test scenarios",
+      "done": false,
+      "userId": "3"
+    },
+    {
+      "id": "90",
+      "text": "Plan disaster recovery test",
+      "done": true,
+      "userId": "3"
+    },
+    {
+      "id": "91",
+      "text": "Implement data retention policy",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "92",
+      "text": "Coordinate logistics",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "93",
+      "text": "Draft press invitation",
+      "done": true,
+      "userId": "1"
+    },
+    {
+      "id": "94",
+      "text": "Develop SEO strategy",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "95",
+      "text": "Test internal systems",
+      "done": false,
+      "userId": "1"
+    },
+    {
+      "id": "96",
+      "text": "Optimize email delivery",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "97",
+      "text": "Update promotional materials",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "98",
+      "text": "Conduct health and safety audit",
+      "done": false,
+      "userId": "2"
+    },
+    {
+      "id": "99",
+      "text": "Launch affiliate program",
+      "done": true,
+      "userId": "2"
+    },
+    {
+      "id": "100",
+      "text": "Conduct security audit",
+      "done": false,
+      "userId": "3"
+    }
+  ]
 }
