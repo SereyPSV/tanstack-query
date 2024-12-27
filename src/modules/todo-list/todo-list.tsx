@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import { todoListApi } from "./api";
 import { useState } from "react";
 
@@ -9,9 +9,11 @@ export function TodoList() {
     data: todoItems,
     error,
     isPending,
+    isPlaceholderData,
   } = useQuery({
     queryKey: ["tasks", "list", { page }],
     queryFn: (meta) => todoListApi.getTodoList({ page }, meta),
+    placeholderData: keepPreviousData,
   });
 
   if (isPending) {
@@ -26,7 +28,11 @@ export function TodoList() {
     <div className="p-5 mx-auto max-w-[1200px] mt-10">
       <h1 className="mb-5 text-3xl font-bold underline"> Todo LIst</h1>
 
-      <div className="flex flex-col gap-4">
+      <div
+        className={
+          "flex flex-col gap-4" + (isPlaceholderData ? " opacity-50" : "")
+        }
+      >
         {todoItems.data.map((todo) => (
           <div className="p-3 border rounded border-slate-300" key={todo.id}>
             {todo.text}
